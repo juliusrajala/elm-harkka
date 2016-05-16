@@ -25,7 +25,9 @@ view model =
     ]
 
 -- Update
-type Msg = NextNumber
+type Msg 
+  = NextNumber
+  | NewFace Int
 
 update : Msg -> Model -> (Model, Cmd Msg)
 update msg model =
